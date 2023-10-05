@@ -51,30 +51,4 @@ body {
     color: #666;
 }
 
-/* Challenge 1: Emoji */
-.challenge1 .emoji {
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    border-radius: 50%;
-    margin: 0 auto;
-}
 
-/* Challenge 2: Parasite */
-.challenge2 .parasite {
-    width: 150px;
-    height: 150px;
-    background-color: green;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-/* Challenge 3: Geek */
-.challenge3 .geek {
-    font-size: 24px;
-    color: purple;
-    text-align: center;
-    padding: 20px;
-    background-color: lightblue;
-    border-radius: 5px;
-}
