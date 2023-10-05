@@ -5,32 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>42CSSTober Daily Challenges</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="container">
-        <h1 class="title">42CSSTober Daily Challenges</h1>
-        <div class="card-group">
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-8 p-8">
+        <h1 class="text-3xl font-semibold text-center">42CSSTober Daily Challenges</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
             <!-- Challenge 1: Emoji -->
-            <div class="card challenge1">
-                <h2>Day 1</h2>
-                <div class="emoji"></div>
-                <p>Emoji Challenge</p>
+            <div class="card bg-white p-4 rounded-lg shadow">
+                <h2 class="text-xl font-semibold text-center">Day 1</h2>
+                <div class="emoji w-20 h-20 mx-auto bg-yellow-400 rounded-full"></div>
+                <p class="text-center mt-2">Emoji Challenge</p>
             </div>
 
             <!-- Challenge 2: Parasite -->
-            <div class="card challenge2">
-                <h2>Day 2</h2>
-                <div class="parasite"></div>
-                <p>Parasite Challenge</p>
+            <div class="card bg-white p-4 rounded-lg shadow">
+                <h2 class="text-xl font-semibold text-center">Day 2</h2>
+                <div class="parasite w-20 h-20 mx-auto bg-green-400 rounded-full"></div>
+                <p class="text-center mt-2">Parasite Challenge</p>
             </div>
 
             <!-- Challenge 3: Geek -->
-            <div class="card challenge3">
-                <h2>Day 3</h2>
-                <div class="geek"></div>
-                <p>Geek Challenge</p>
+            <div class="card bg-white p-4 rounded-lg shadow">
+                <h2 class="text-xl font-semibold text-center">Day 3</h2>
+                <div class="geek mx-auto bg-light-blue-300 p-4 rounded-lg">
+                    <p class="text-purple-600 text-xl text-center">Geek</p>
+                </div>
             </div>
 
             <!-- Add more challenges here -->
