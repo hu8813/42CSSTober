@@ -1,0 +1,113 @@
+/* Challenge 1: Emoji */
+.challenge1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge1 .emoji {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+/* Challenge 2: Parasite */
+.challenge2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge2 .parasite {
+    width: 150px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+}
+
+.challenge2 .parasite::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Challenge 3: Geek */
+.challenge3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge3 .geek {
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.challenge3 .geek p {
+    font-size: 24px;
+    color: purple;
+    text-align: center;
+}
+
+/* Challenge 4: Rainbow */
+.challenge4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge4 .rainbow {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+}
+
+/* Challenge 5: Poisonous */
+.challenge5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge5 .poisonous {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.challenge5 .poisonous::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.challenge5 .poisonous::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
