@@ -74,8 +74,9 @@ footer {
         display: none; /* Hide all challenges by default */
     }
 }
+
 /* Challenge 1: Emoji */
-.challenge1 {
+#challenge1 {
     display: inline-block;
     width: 100px;
     height: 100px;
@@ -84,8 +85,8 @@ footer {
     position: relative;
 }
 
-.challenge1::before,
-.challenge1::after {
+#challenge1::before,
+#challenge1::after {
     content: "";
     display: block;
     width: 20px;
@@ -96,15 +97,15 @@ footer {
     top: 30px;
 }
 
-.challenge1::before {
+#challenge1::before {
     left: 30px;
 }
 
-.challenge1::after {
+#challenge1::after {
     right: 30px;
 }
 
-.challenge1::before {
+#challenge1::before {
     border-bottom-left-radius: 50px 30px;
     border-bottom-right-radius: 50px 30px;
     width: 40px;
@@ -115,7 +116,7 @@ footer {
 }
 
 /* Challenge 2: Parasite */
-.challenge2 {
+#challenge2 {
     background-color: green;
     width: 200px;
     height: 150px;
@@ -126,7 +127,7 @@ footer {
     align-items: center;
 }
 
-.challenge2::before {
+#challenge2::before {
     content: "";
     width: 60px;
     height: 60px;
@@ -138,7 +139,7 @@ footer {
 }
 
 /* Challenge 3: Geek */
-.challenge3 {
+#challenge3 {
     font-size: 24px;
     color: purple;
     text-align: center;
@@ -147,7 +148,7 @@ footer {
 }
 
 /* Challenge 4: Rainbow */
-.challenge4 {
+#challenge4 {
     background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
     width: 200px;
     height: 200px;
@@ -158,7 +159,7 @@ footer {
 }
 
 /* Challenge 5: Poisonous */
-.challenge5 {
+#challenge5 {
     background-color: black;
     width: 150px;
     height: 150px;
@@ -166,7 +167,7 @@ footer {
     position: relative;
 }
 
-.challenge5::before {
+#challenge5::before {
     content: "";
     width: 60px;
     height: 60px;
@@ -177,7 +178,7 @@ footer {
     left: 20px;
 }
 
-.challenge5::after {
+#challenge5::after {
     content: "";
     width: 40px;
     height: 40px;
@@ -187,4 +188,3 @@ footer {
     top: 45px;
     left: 45px;
 }
-
