@@ -74,8 +74,7 @@ footer {
         display: none; /* Hide all challenges by default */
     }
 }
-
-/* Challenge 1: Smiley Face */
+/* Challenge 1: Emoji */
 .challenge1 {
     display: inline-block;
     width: 100px;
@@ -115,7 +114,77 @@ footer {
     transform: rotate(-20deg);
 }
 
-/* Challenge 2: Bird */
+/* Challenge 2: Parasite */
 .challenge2 {
-    /* Bird CSS goes here */
+    background-color: green;
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.challenge2::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Challenge 3: Geek */
+.challenge3 {
+    font-size: 24px;
+    color: purple;
+    text-align: center;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+/* Challenge 4: Rainbow */
+.challenge4 {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Challenge 5: Poisonous */
+.challenge5 {
+    background-color: black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.challenge5::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.challenge5::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
