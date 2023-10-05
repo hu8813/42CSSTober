@@ -70,4 +70,70 @@ footer {
 		flex: 0 0 calc(50% - 20px);
 		max-width: calc(50% - 20px);
 	}
+.challenge {
+    display: none; /* Hide all challenges by default */
+}
+
+	/* Challenge 1: Smiley Face */
+.challenge1 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%; /* Create a circular shape */
+    position: relative;
+}
+
+/* Eyes */
+.challenge1::before,
+.challenge1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+
+/* Left Eye */
+.challenge1::before {
+    left: 30px;
+}
+
+/* Right Eye */
+.challenge1::after {
+    right: 30px;
+}
+
+/* Mouth (Smile) */
+.challenge1::before {
+    border-bottom-left-radius: 50px 30px;
+    border-bottom-right-radius: 50px 30px;
+    width: 40px;
+    height: 25px;
+    top: 45px;
+    left: 30px;
+    transform: rotate(-20deg);
+}
+
+.challenge2 {
+    display: none; /* Hide all challenges by default */
+}
+
+.challenge3 {
+    display: none; /* Hide all challenges by default */
+}
+
+.challenge4 {
+    display: none; /* Hide all challenges by default */
+}
+
+.challenge5 {
+    display: none; /* Hide all challenges by default */
+}
+
+
+
 }
