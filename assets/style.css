@@ -22,29 +22,25 @@ body {
     margin: 0 auto;
 }
 
-h1, .subtitle {
+.title {
     text-align: center;
-}
-
-a {
-    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .card-group {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
 .card {
     background-color: var(--varBGColor);
     border: 2px solid #333;
     border-radius: 5px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
+    width: 250px;
 }
 
 .card h2 {
@@ -55,136 +51,30 @@ a {
     color: #666;
 }
 
-footer {
-    background-color: var(--varBGColor);
-    margin-top: 50px;
-    padding: 5px;
-    text-align: center;
-    position: sticky;
-    bottom: 0;
-}
-
-@media (max-width: 768px) {
-    .card {
-        flex: 0 0 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-    
-    .challenge {
-        display: none; /* Hide all challenges by default */
-    }
-}
-
 /* Challenge 1: Emoji */
-#challenge1 {
-    display: inline-block;
+.challenge1 .emoji {
     width: 100px;
     height: 100px;
     background-color: yellow;
     border-radius: 50%;
-    position: relative;
-}
-
-#challenge1::before,
-#challenge1::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-}
-
-#challenge1::before {
-    left: 30px;
-}
-
-#challenge1::after {
-    right: 30px;
-}
-
-#challenge1::before {
-    border-bottom-left-radius: 50px 30px;
-    border-bottom-right-radius: 50px 30px;
-    width: 40px;
-    height: 25px;
-    top: 45px;
-    left: 30px;
-    transform: rotate(-20deg);
+    margin: 0 auto;
 }
 
 /* Challenge 2: Parasite */
-#challenge2 {
-    background-color: green;
-    width: 200px;
+.challenge2 .parasite {
+    width: 150px;
     height: 150px;
-    border-radius: 50px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#challenge2::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: red;
+    background-color: green;
     border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    margin: 0 auto;
 }
 
 /* Challenge 3: Geek */
-#challenge3 {
+.challenge3 .geek {
     font-size: 24px;
     color: purple;
     text-align: center;
     padding: 20px;
     background-color: lightblue;
-}
-
-/* Challenge 4: Rainbow */
-#challenge4 {
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Challenge 5: Poisonous */
-#challenge5 {
-    background-color: black;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    position: relative;
-}
-
-#challenge5::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: green;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-#challenge5::after {
-    content: "";
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 45px;
-    left: 45px;
+    border-radius: 5px;
 }
